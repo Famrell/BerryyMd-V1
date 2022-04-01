@@ -207,116 +207,174 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
             mtype: 'listMessage',
             sections: [
               {
-                "rows": [{
-                  "title": `OWNER BOT`,
-                  "description": "Nomor Pemilik Bot Chat P/Meminta Save Tidak Akan Di Respon",
-                  "rowId": `.owner`
-                },{
-                  "title": "INFO BOT",
-                  "description": "Menampilkan Menu Info",
-                  "rowId": `${_p}? info`
-                }],
-                "title": "INFORMASI BOT"
+              "rows": [{
+                "title": `Pemilik Bot`,
+                "description": "Owner Kesayangan",
+                "rowId": `${_p}owner`
               }, {
-                "rows": [{
-                  "title": `SEMUA PERINTAH`,
-                  "description": "Menampilkan Menu All",
-                  "rowId": '.allmenu'
-                  }, {
-                  "title": "ABSEN & VOTING",
-                  "description": "Menampilkan Menu Absen",
-                  "rowId": `${_p}? absen`
-                }, {
-                  "title": "ANIME MENU",
-                  "description": "Menampilkan Menu Anime",
-                  "rowId": `${_p}? anime`
-                }, {
-                  "title": "NSFW MENU",
-                  "description": "Menampilkan Menu Nsfw",
-                  "rowId": `${_p}? nsfw`
-                }, {
-                  "title": "STICKER & CONVERTER",
-                  "description": "Menampilkan Menu Sticker",
-                  "rowId": `${_p}? sticker`
-                }, {
-                  "title": "DOWNLOADER MENU",
-                  "description": "Menampilkan Menu Downloader",
-                  "rowId": `${_p}? downloader`
-                }, {
-                  "title": "EXP & LIMIT",
-                  "description": "Menampilkan Menu Exp",
-                  "rowId": `${_p}? xp`
-                }, {
-                  "title": "FUN MENU",
-                  "description": "Menampilkan Menu Fun",
-                  "rowId": `${_p}? fun`
-                }, {
-                  "title": "GAME MENU",
-                  "description": "Menampilkan Menu Game",
-                  "rowId": `${_p}? game`
-                }, {
-                  "title": "GITHUB MENU",
-                  "description": "Menampilkan Menu Github",
-                  "rowId": `${_p}? github`
-                }, {
-                  "title": "GROUP MENU",
-                  "description": "Menampilkan Menu Group",
-                  "rowId": `${_p}? group`
-                }, {
-                  "title": "IMAGE MENU",
-                  "description": "Menampilkan Menu Image",
-                  "rowId": `${_p}? image`
-                }, {
-                  "title": "INTERNET MENU",
-                  "description": "Menampilkan Menu Internet",
-                  "rowId": `${_p}? internet`
-                }, {
-                  "title": "ISLAM MENU",
-                  "description": "Menampilkan Menu Islam",
-                  "rowId": `${_p}? islam`
-                }, {
-                  "title": "KERANG AJAIB",
-                  "description": "Menampilkan Menu Kerang",
-                  "rowId": `${_p}? kerang`
-                }, {
-                  "title": "MAKER MENU",
-                  "description": "Menampilkan Menu Maker",
-                  "rowId": `${_p}? maker`
-                }, {
-                  "title": "OWNER MENU",
-                  "description": "Menampilkan Menu Owner",
-                  "rowId": `${_p}? owner`
-                }, {
-                  "title": "PENGUBAH SUARA",
-                  "description": "Menampilkan Menu Voice Changer",
-                  "rowId": `${_p}? suara`
-                }, {
-                  "title": "PREMIUM MENU",
-                  "description": "Menampilkan Menu Premium",
-                  "rowId": `${_p}? premium`
-                }, {
-                  "title": "QUOTES MENU",
-                  "description": "Menampilkan Menu Quotes",
-                  "rowId": `${_p}? quotes`
-                }, {
-                  "title": "RPG MENU",
-                  "description": "Menampilkan Menu Rpg",
-                  "rowId": `${_p}? rpg`
-                }, {
-                  "title": "STALKER MENU",
-                  "description": "Menampilkan Menu Stalker",
-                  "rowId": `${_p}? stalk`
-                }, {
-                  "title": "SHORT LINK",
-                  "description": "Menampilkan Menu Short Link",
-                  "rowId": `${_p}? shortlink`
-                }, {
-                  "title": "TOOLS MENU",
-                  "description": "Menampilkan Menu Tools",
-                  "rowId": `${_p}? tools`
-                }
-                  ],
-                "title": "LIST MENU"
+                "title": "Runtime Bot",
+                "description": "Untuk Melihat Runtime Bot",
+                "rowId": `${_p}runtime`
+              }, {
+                "title": "Buat Beli Apikey",
+                "description": "Donasi nyaa",
+                "rowId": `${_p}donasi`
+              }],
+              "title": "⟣───────❲  Informasi Venzz Bot  ❳────────⟢"
+            }, {
+              "rows": [{
+                "title": `Semua Perintah`,
+                "description": "Menu Semua Perintah",
+                "rowId": `${_p}? all`
+                }],
+              "title": "─────「 1 」─────"
+            }, {
+              "rows": [{
+                "title": `Game`,
+                "description": "Menu untuk Game",
+                "rowId": `${_p}? game`
+              }],
+              "title": "─────「 2 」─────"
+            }, {
+              "rows": [{
+                "title": `XP`,
+                "description": "Menu untuk XP",
+                "rowId": `${_p}? xp`
+              }],
+              "title": "─────「 3 」─────"
+            }, {
+              "rows": [{
+                "title": `Kerang Ajaib`,
+                "description": "Puja kerang ajaib...",
+                "rowId": `${_p}? kerang`
+              }],
+              "title": "─────「 4 」─────"
+            }, {
+              "rows": [{
+                "title": `Maker Menu`,
+                "description": "Menu untuk Maker/Membuat",
+                "rowId": `${_p}? maker`
+              }],
+              "title": "─────「 5 」─────"
+            }, {
+              "rows": [{
+                "title": `Anime`,
+                "description": "Menu Anime",
+                "rowId": `${_p}? anime`
+              }],
+              "title": "─────「 6 」─────"
+              }, {
+              "rows": [{
+                "title": `NSFW`,
+                "description": "Menu Nsfw",
+                "rowId": `${_p}? nsfw`
+              }],
+              "title": "─────「 7 」─────"
+            }, {
+              "rows": [{
+                "title": `Grup`,
+                "description": "Menu untuk Group",
+                "rowId": `${_p}? group`
+              }],
+              "title": "─────「 8 」─────"
+            }, {
+              "rows": [{
+                "title": `Premium`,
+                "description": "Menu untuk Premium Users",
+                "rowId": `${_p}? premium`
+              }],
+              "title": "─────「 9 」─────"
+            }, {
+              "rows": [{
+                "title": `Internet`,
+                "description": "Menu untuk menjelajahi Internet...",
+                "rowId": `${_p}? internet`
+              }],
+              "title": "─────「 10 」─────"
+            }, {
+              "rows": [{
+                "title": `Quotes Menu`,
+                "description": "Menu untuk Quotes",
+                "rowId": `${_p}? quotes`
+              }],
+              "title": "─────「 11 」─────"
+            }, {
+              "rows": [{
+                "title": `Stalker Menu`,
+                "description": "Menu untuk Stalker",
+                "rowId": `${_p}? stalk`
+              }],
+              "title": "─────「 12 」─────"
+            }, {
+              "rows": [{
+                "title": `Downloader`,
+                "description": "Menu Downloader",
+                "rowId": `${_p}? downloader`
+              }],
+              "title": "─────「 13 」─────"
+            }, {
+              "rows":[{
+                "title": `Tools`,
+                "description": "Menu untuk Tools",
+                "rowId": `${_p}? tools`
+              }],
+              "title": "─────「 14 」─────"
+            }, {
+              "rows": [{
+                "title": `Fun`,
+                "description": "Menu Fun",
+                "rowId": `${_p}? fun`
+              }],
+              "title": "─────「 15 」─────"
+            }, {
+              "rows": [{
+                "title": `Epic Rpg`,
+                "description": "Menu Rpg",
+                "rowId": `${_p}? rpg`
+              }],
+              "title": "─────「 16 」─────"
+            }, {
+              "rows": [{
+                "title": `Github Menu`,
+                "description": "Menu untuk Github",
+                "rowId": `${_p}? github`
+              }],
+              "title": "─────「 17 」─────"
+            }, {
+              "rows": [{
+                "title": `Vote & Absen`,
+                "description": "Absen Adick-Adick",
+                "rowId": `${_p}? absen`
+              }],
+              "title": "─────「 18 」─────"
+            }, {
+              "rows": [{
+                "title": `Islamic Menu`,
+                "description": "Menu Islamic",
+                "rowId": `${_p}? islam`
+              }],
+              "title": "─────「 19 」─────"
+            }, {
+              "rows": [{
+                "title": `Pengubah Suara`,
+                "description": "Voice Changer",
+                "rowId": `${_p}? suara`
+              }],
+              "title": "─────「 20 」─────"
+            }, {
+              "rows": [{
+                "title": `Info`,
+                "description": "Menu untuk Info",
+                "rowId": `${_p}? info`
+              }],
+              "title": "─────「 21 」─────"
+            }, {
+              "rows": [{
+                "title":  `Owner Menu`,
+                "description": "Menu Khusus Owner",
+                "rowId": `${_p}? owner`
+                }],
+              "title": "─────「 22 」─────"
               }
             ], "contextInfo": {
                "stanzaId": m.key.id,
