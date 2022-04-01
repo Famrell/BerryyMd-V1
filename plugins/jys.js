@@ -10,13 +10,7 @@ let handler = async (m, { command }) => {
 bear = "Source Code"
 ye = `@${m.sender.split`@`[0]}`
 let esce = `
-Hai Sayangku ${ye} Lagi Nyari Sc Botku Ya:v
-
-Nih Link Sc Nya Dibawah :
-https://github.com/FahriAdison/Marin-MD
-
-_*Jangan Lupa Di Fork Dan Kasih Star :3*_
-_*Maaf Kalau Jelek Ya Banh_`
+Mau sc? Minta Sama Owner Yaa`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -33,7 +27,7 @@ _*Maaf Kalau Jelek Ya Banh_`
            },
                {
              quickReplyButton: {
-               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               displayText: 'Back To Menu',
                id: '.menu',
              }
 
