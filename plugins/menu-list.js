@@ -409,8 +409,8 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
             ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
               return menu.help.map(help => {
                 return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                  .replace(/%islimit/g, menu.limit ? '🅛' : '')
-                  .replace(/%isPremium/g, menu.premium ? '🅟' : '')
+                  .replace(/%islimit/g, menu.limit ? 'Ⓛ' : '')
+                  .replace(/%isPremium/g, menu.premium ? 'ⓟ' : '')
                   .trim()
               }).join('\n')
             }),
@@ -439,7 +439,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let pp = fs.readFileSync('./src/welcome.jpg')
-    await conn.sendHButtonLoc(m.chat,pp, text.trim(), '🅛=limit 🅟=premium', "📍Instagram", instagram, `Kembali Ke List Menu`, `.menu`, m)
+    await conn.sendHButtonLoc(m.chat,pp, text.trim(), 'Ⓛ: Limit\n Ⓟ: Premium', "📍Instagram", instagram, `Kembali Ke List Menu`, `.menu`, m)
 } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
