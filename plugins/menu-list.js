@@ -208,10 +208,10 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
       const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         "listMessage": {
           "title": `*Haii ${name}, ${ucapan()}*`.trim(),
-          "description": "*_© VenzVL_*",
+          "description": "*_© Berryy_*",
           "buttonText": "Click Here",
             listType: 1,
-           "footerText": "Silahkan tekan tombol \"Click Here\" untuk melihat sub-menu Venzz\nBug/error tanyakan ke owner\n\nNOTE : BOT INI MASIH BETA",
+           "footerText": "Silahkan tekan tombol \"Click Here\" untuk melihat sub-menu Berryy\nBug/error tanyakan ke owner\n\nNOTE : BOT INI MASIH BETA",
             mtype: 'listMessage',
             sections: [
               {
