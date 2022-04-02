@@ -226,7 +226,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
               }, {
                 "title": "Grup Bot",
                 "description": "Masuk Sekedar Senang Senangan/Informasi",
-                "rowId": `${_p}linkgc`
+                "rowId": `${_p}grupbot`
               }, {
                 "title": "Buat Beli Apikey",
                 "description": "Donasi nyaa",
