@@ -203,7 +203,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
           "description": "*_© VenzVL_*",
           "buttonText": "Click Here",
             listType: 1,
-            footerText: "Silahkan tekan tombol \"Click Here\" untuk melihat sub-menu Venzz\nBug/error tanyakan ke owner",
+           "footerText": "Silahkan tekan tombol \"Click Here\" untuk melihat sub-menu Venzz\nBug/error tanyakan ke owner\n\nNOTE : BOT INI MASIH BETA",
             mtype: 'listMessage',
             sections: [
               {
@@ -220,7 +220,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
                 "description": "Donasi nyaa",
                 "rowId": `${_p}donasi`
               }],
-              "title": "⟣───────❲  Informasi Venzz Bot  ❳────────⟢"
+              "title": "⟣───────❲  Informasi Berryll  ❳────────⟢"
             }, {
               "rows": [{
                 "title": `Semua Perintah`,
