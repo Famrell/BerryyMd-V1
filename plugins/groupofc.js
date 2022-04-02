@@ -8,7 +8,7 @@ Grup 2:
 -
 Kalau linknya gak valid/direset hubungi owner
 Be A Smart People
-`.trim(), footer, 'Donasi', '.donasi', m)
+`.trim(), wm, 'Donasi', '.donasi', m)
 handler.help = ['grupbot']
 handler.tags = ['info']
 handler.command = /^(gcbot|grupbot|groupbot)$/i
