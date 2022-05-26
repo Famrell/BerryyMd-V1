@@ -62,14 +62,14 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.stiker_wait = 'Stiker sedang dibuat'
 global.packname = 'stickerby'
-global.author = `Berryll - Md
+global.author = `BuzzMd
 
 
 
 
 
 ig: fikenzyy`
-global.wm = '© Berryy'
+global.wm = '© Buzzz-Md'
 global.watermark = wm
 global.botdate = `╭──────────═┅═─────────\n│◪ ${time}\n┊◪ ${week} ${date}\n╰──────────═┅═─────────`
 global.media = 'https://telegra.ph/file/ccb2359d3925fd7af58cd.jpg'
